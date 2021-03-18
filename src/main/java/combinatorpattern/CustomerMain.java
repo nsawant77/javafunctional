@@ -2,7 +2,7 @@ package combinatorpattern;
 
 import java.time.LocalDate;
 
-public class Main {
+public class CustomerMain {
 
     public static void main(String[] args) {
 

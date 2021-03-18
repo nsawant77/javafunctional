@@ -10,7 +10,7 @@ public interface CustomerValidatorCombinator extends Function <Customer, Custome
         return customer -> customer != null && !customer.getName().isEmpty() ? ValidatorResult.VALID_NAME : ValidatorResult.INVALID_NAME;
     }
 
-    static CustomerValidatorCombinator isAdult (){
+    static CustomerValidatorCombinator isAdult () {
         return customer -> Period.between(customer.getDob(), LocalDate.now()).getYears() > 16 ? ValidatorResult.AN_ADULT : ValidatorResult.NOT_AN_ADULT;
     }
 
