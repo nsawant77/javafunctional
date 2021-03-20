@@ -2,18 +2,16 @@ package example;
 
 import javax.swing.plaf.synth.SynthLookAndFeel;
 import java.util.Scanner;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
+import java.util.function.*;
 
 public class EvenOrNot {
 
-    static Predicate<Integer> isEven = (num) -> num%2 == 0;
+    static IntPredicate isEven = (num) -> num%2 == 0;
     static Consumer<Integer> consumerNo = (a) -> System.out.println("Test");
     static Supplier<String> even = () -> "Even";
     static Supplier<String> odd = () -> "Odd";
     static Function<Integer, String> evenOrOdd = num -> isEven.test(num) ? even.get() :odd.get();
+    static UnaryOperator<String> op = str -> str;
 
     public static void main(String[] args) {
 
