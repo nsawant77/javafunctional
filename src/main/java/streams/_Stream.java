@@ -10,7 +10,7 @@ public class _Stream {
     public static void main(String[] args) {
 
         List<String> listOfInt = new ArrayList<>();
-        listOfInt.add("100");
+        listOfInt.add("102");
 
         List<Person> people = new ArrayList<Person>();
         people.add(new Person("John",Gender.MALE));
